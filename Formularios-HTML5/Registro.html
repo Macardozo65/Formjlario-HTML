@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title> REGISTRO </title>
+<link rel="icon" type="image/png" href="img/registro.png">
+</head>
+<body>
+<h1> Formulario de Registro </h1>
+
+<form action= "recibido.php" method="post">
+
+ <fieldset>
+
+<label>*Nombre:</label><br>
+<input type="tex" name="nombre" placeholder="Ingresa tu nombre" required=""><br><br>
+
+<label>*Apellido:</label><br>
+<input type="tex" name="apellido" placeholder="Ingresa tu apellido" required=""><br><br>
+
+<div><label>*Documento de Identidad:
+<select name="">
+<option value="seleccione">Seleccione</option>
+<option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+<option value="Targeta de Identidad">Targeta de Identidad</option>
+<option value="Cedula de Extranjería">Cedula de Extranjería</option>
+<option value="Pasaporte">Pasaporte</option>
+</select>
+</label><br></br>
+</div>
+
+<label>*Número de Documento:</label><br>
+<input type="number" name="Número de Documento" placeholder="Número de Documento" required=""><br><br>
+
+<div><label>*Fecha de Nacimiento:</label>
+<input type="date" required=""><br><br></div>
+
+<div><label>Ingrese su Sexo:</label>
+<input type="radio" name="Sexo">Hombre
+<input type="radio" name="Sexo">Mujer 
+<input type="radio" name="Otro">Otro<br></br></div>
+
+<label>*Correo Elctrónico:</label><br>
+<input type="email" name="email" placeholder="Correo Electrónico" required=""><br><br>
+
+<label>*Contraseña:</label><br>
+<input type="password" name="Clave" placeholder="Ingresar Contraseña" required=""><br><br>
+
+<label>*Confirmar Contraseña:</label><br>
+<input type="password" name="Clave" placeholder="Confirmar Contraseña" required=""><br><br>
+
+<input type="checkbox" name"recordar" value="recordar"> Acepto términos y condiciones <br><br>
+<input type="submit" value="Crear cuenta">	<input type="submit" value="Cancelar"><br><br>
+
+ </fieldset>
+</form>
+</body>
+</html>
